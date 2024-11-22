@@ -77,4 +77,5 @@ return {
       )
     end,
   },
+  { "nyoom-engineering/oxocarbon.nvim", lazy = true }
 }

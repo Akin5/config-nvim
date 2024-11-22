@@ -1,3 +1,4 @@
+
 require("lazy").setup({
   {
     "AstroNvim/AstroNvim",
@@ -13,7 +14,7 @@ require("lazy").setup({
   },
   { import = "community" },
   { import = "plugins" },
-} --[[@as LazySpec]], {
+  } --[[@as LazySpec]], {
   -- Configure any other `lazy.nvim` configuration options here
   install = { colorscheme = { "astrotheme", "habamax" } },
   ui = {
@@ -21,8 +22,7 @@ require("lazy").setup({
       border = "rounded",
       browser = "chrome",
       throttle = 40,
-
-    },
+  },
   performance = {
     rtp = {
       -- disable some rtp plugins, add more to your liking
@@ -38,4 +38,6 @@ require("lazy").setup({
       },
     },
   },
+  change_detection = { enabled = false, notify = false }, -- Nonaktifkan deteksi perubahan
+  checker = { enabled = true }
 } --[[@as LazyConfig]])
