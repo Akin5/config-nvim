@@ -6,6 +6,7 @@ local M = {
 		opts = {},
 		config = true,
 	},
+	enabled = false
 }
 
 function M.config()

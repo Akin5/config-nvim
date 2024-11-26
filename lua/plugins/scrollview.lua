@@ -10,4 +10,5 @@ return {
 		require("scrollview").setup(opts)
 		vim.g.scrollview_excluded_filetypes = { "NvimTree", "vista_kind", "Outline", "neo-tree" }
 	end,
+	enabled = false
 }

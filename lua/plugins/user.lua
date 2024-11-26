@@ -77,5 +77,11 @@ return {
       )
     end,
   },
-  { "nyoom-engineering/oxocarbon.nvim", lazy = true }
+  { "nyoom-engineering/oxocarbon.nvim", lazy = true },
+  {
+    "CosecSecCot/midnight-desert.nvim",
+    dependencies = {
+        "rktjmp/lush.nvim",
+    },
+}
 }

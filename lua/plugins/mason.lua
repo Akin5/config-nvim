@@ -21,7 +21,6 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-	"prettier",
 	"prettierd"
         -- add more arguments for adding more null-ls sources
       },
