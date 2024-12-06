@@ -23,13 +23,19 @@ return {
     opts = function(_, opts)
       -- customize the dashboard header
       opts.section.header.val = {       
-"██╗  ██╗██╗███╗   ██╗██╗  ██╗███████╗███╗   ██╗",
-"██║ ██╔╝██║████╗  ██║██║ ██╔╝██╔════╝████╗  ██║",
-"█████╔╝ ██║██╔██╗ ██║█████╔╝ █████╗  ██╔██╗ ██║",
-"██╔═██╗ ██║██║╚██╗██║██╔═██╗ ██╔══╝  ██║╚██╗██║",
-"██║  ██╗██║██║ ╚████║██║  ██╗███████╗██║ ╚████║",
-"╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝",
+        "██╗  ██╗██╗███╗   ██╗██╗  ██╗███████╗███╗   ██╗",
+        "██║ ██╔╝██║████╗  ██║██║ ██╔╝██╔════╝████╗  ██║",
+        "█████╔╝ ██║██╔██╗ ██║█████╔╝ █████╗  ██╔██╗ ██║",
+        "██╔═██╗ ██║██║╚██╗██║██╔═██╗ ██╔══╝  ██║╚██╗██║",
+        "██║  ██╗██║██║ ╚████║██║  ██╗███████╗██║ ╚████║",
+        "╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝",
       }
+      opts.section.buttons.val = {
+			  opts.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
+			  opts.button("b", "  > Browse files", ":Oil --float<CR>"),
+			  opts.button("f", "󰈞  > Find file", ":Telescope find_files<CR>"),
+			  opts.button("r", "  > Recent", ":Telescope oldfiles<CR>"),
+		  }
       return opts
     end,
   },
@@ -81,7 +87,7 @@ return {
   {
     "CosecSecCot/midnight-desert.nvim",
     dependencies = {
-        "rktjmp/lush.nvim",
+      "rktjmp/lush.nvim",
     },
-}
+  }
 }

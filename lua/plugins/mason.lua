@@ -10,7 +10,7 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
-        "ts_ls",
+        -- "ts_ls",
         -- add more arguments for adding more language servers
       },
     },
@@ -21,7 +21,7 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
-	"prettier"
+	      -- "prettier"
         -- add more arguments for adding more null-ls sources
       },
     },
